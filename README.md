@@ -35,7 +35,8 @@ section p, section li {margin-bottom:15px;}
 .services, .testimonials, .projects {display:grid; grid-gap:20px;}
 .services {grid-template-columns:repeat(auto-fit, minmax(250px,1fr));}
 .projects {grid-template-columns:repeat(auto-fit, minmax(280px,1fr));}
-.projects img {width:100%; border-radius:8px;}
+.projects img {width:100%; border-radius:8px; transition: transform 0.3s;}
+.projects img:hover {transform: scale(1.05);}
 .testimonial {background:#f5f5f5; padding:20px; border-left:4px solid #0078d4; border-radius:5px;}
 
 /* Contact Form */
@@ -83,8 +84,8 @@ html {scroll-behavior:smooth;}
 <section id="about">
   <h2>About Us</h2>
   <p>NextGen Engineering & Infra Solutions is a Bangalore-based firm specializing in high-quality infrastructure development. We handle electrical, plumbing, fabrication, erection, civil construction, and maintenance projects with unmatched professionalism.</p>
-  <p><strong>Mission:</strong> To deliver top-class engineering services with safety, precision, and on-time completion.</p>
-  <p><strong>Vision:</strong> To build the next generation of reliable, sustainable, and innovative infrastructure.</p>
+  <p><strong>Mission:</strong> Deliver top-class engineering services with safety, precision, and on-time completion.</p>
+  <p><strong>Vision:</strong> Build the next generation of reliable, sustainable, and innovative infrastructure.</p>
 </section>
 
 <!-- Services -->
@@ -114,9 +115,10 @@ html {scroll-behavior:smooth;}
 <section id="projects">
   <h2>Project Gallery</h2>
   <div class="projects">
-    <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=600&q=60" alt="Project 1">
-    <img src="https://images.unsplash.com/photo-1581092334360-9e12d3b3e9a5?auto=format&fit=crop&w=600&q=60" alt="Project 2">
-    <img src="https://images.unsplash.com/photo-1581093588401-22a9b3f63c10?auto=format&fit=crop&w=600&q=60" alt="Project 3">
+    <img src="https://images.unsplash.com/photo-1505842465776-3d45f5c8eeec?auto=format&fit=crop&w=600&q=60" alt="Project 1">
+    <img src="https://images.unsplash.com/photo-1599058917210-56d0b923bb35?auto=format&fit=crop&w=600&q=60" alt="Project 2">
+    <img src="https://images.unsplash.com/photo-1567016545376-7c7e5c7d812f?auto=format&fit=crop&w=600&q=60" alt="Project 3">
+    <img src="https://images.unsplash.com/photo-1542223616-1aee3c7b59f2?auto=format&fit=crop&w=600&q=60" alt="Project 4">
   </div>
 </section>
 
@@ -140,6 +142,7 @@ html {scroll-behavior:smooth;}
   <h2>Request a Quote</h2>
   <form action="https://formsubmit.co/nextgenenggandinfrasolutions@outlook.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://website04.github.io/nextgen-engg-infra/#contact">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="text" name="phone" placeholder="Phone Number">
