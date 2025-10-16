@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - NextGen Engineering & Infra Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><span class="blue">NextGen</span> Engineering & Infra Solutions</div>
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h1>About Us</h1>
+  <p>
+    NextGen Engineering & Infra Solutions is a Bangalore-based firm specializing in 
+    high-quality infrastructure development. We handle electrical, plumbing, fabrication,
+    erection, civil construction, and maintenance projects with unmatched professionalism.
+  </p>
+  <h2>Our Mission</h2>
+  <p>To deliver top-class engineering services with safety, precision, and on-time completion.</p>
+  <h2>Our Vision</h2>
+  <p>To build the next generation of reliable, sustainable, and innovative infrastructure.</p>
+</section>
+
+<footer>
+  <p>© 2025 NextGen Engineering & Infra Solutions</p>
+</footer>
+</body>
+</html>

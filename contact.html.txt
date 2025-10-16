@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - NextGen Engineering & Infra Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><span class="blue">NextGen</span> Engineering & Infra Solutions</div>
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h1>Request a Quote</h1>
+  <form action="https://formsubmit.co/nextgenenggandinfrasolutions@outlook.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Name</label>
+    <input type="text" name="name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Phone</label>
+    <input type="text" name="phone">
+    <label>Message / Project Details</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Request</button>
+  </form>
+
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>📞 9986283353 / 7026117372</p>
+    <p>📧 nextgenenggandinfrasolutions@outlook.com</p>
+    <p>📍 Serving all over Bangalore</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 NextGen Engineering & Infra Solutions</p>
+</footer>
+</body>
+</html>

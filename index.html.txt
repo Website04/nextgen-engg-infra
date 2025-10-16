@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen Engineering & Infra Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><span class="blue">NextGen</span> Engineering & Infra Solutions</div>
+    <nav id="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1581091215367-59ab6b22e1e8?auto=format&fit=crop&w=1600&q=80');">
+    <div class="hero-content">
+      <h1>Building the Next Generation of Infrastructure</h1>
+      <a href="contact.html" class="btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 NextGen Engineering & Infra Solutions | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

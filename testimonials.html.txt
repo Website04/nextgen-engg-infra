@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials - NextGen Engineering & Infra Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><span class="blue">NextGen</span> Engineering & Infra Solutions</div>
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="testimonials.html" class="active">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="content">
+  <h1>Client Testimonials</h1>
+  <div class="testimonial">
+    <p>“NextGen delivered our industrial fabrication project ahead of schedule with excellent quality. Highly recommended!”</p>
+    <h4>— Ramesh, Site Manager</h4>
+  </div>
+  <div class="testimonial">
+    <p>“Professional and reliable team. They handled our civil works flawlessly.”</p>
+    <h4>— Anil, Contractor</h4>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 NextGen Engineering & Infra Solutions</p>
+</footer>
+</body>
+</html>
