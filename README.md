@@ -30,13 +30,8 @@
         header {
             background: linear-gradient(135deg, #1a3a5f 0%, #2c5282 100%);
             color: white;
-            padding: 15px 0;
+            padding: 20px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
         }
 
         .header-content {
@@ -45,99 +40,32 @@
             align-items: center;
         }
 
-        /* Futuristic Logo Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
-        
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 5px;
+        .logo-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #4CAF50;
         }
 
-        .hologram-cube {
-            width: 50px;
-            height: 50px;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateX(-25deg) rotateY(45deg);
-            animation: float 6s ease-in-out infinite;
+        .logo-text h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
         }
 
-        @keyframes float {
-            0%, 100% { transform: rotateX(-25deg) rotateY(45deg) translateY(0px); }
-            50% { transform: rotateX(-25deg) rotateY(45deg) translateY(-5px); }
+        .logo-text .nextgen {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #4CAF50;
+            display: block;
+            line-height: 1.1;
         }
 
-        .face {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            border: 1.5px solid #4CAF50;
-            background: rgba(76, 175, 80, 0.1);
-            backdrop-filter: blur(5px);
-        }
-
-        .front { transform: translateZ(25px); }
-        .back { transform: translateZ(-25px) rotateY(180deg); }
-        .right { transform: rotateY(90deg) translateZ(25px); }
-        .left { transform: rotateY(-90deg) translateZ(25px); }
-        .top { transform: rotateX(90deg) translateZ(25px); }
-        .bottom { transform: rotateX(-90deg) translateZ(25px); }
-
-        .energy-core {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 12px;
-            height: 12px;
-            background: radial-gradient(circle, #4CAF50, #2E7D32);
-            border-radius: 50%;
-            filter: blur(3px);
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { 
-                transform: translate(-50%, -50%) scale(1);
-                box-shadow: 0 0 10px #4CAF50, 0 0 20px #2E7D32;
-            }
-            50% { 
-                transform: translate(-50%, -50%) scale(1.1);
-                box-shadow: 0 0 15px #4CAF50, 0 0 30px #2E7D32;
-            }
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-text .company-name {
-            font-size: 1.5rem;
-            font-weight: 900;
-            background: linear-gradient(45deg, #4CAF50, #2E7D32, #8BC34A);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 1px;
-            font-family: 'Orbitron', sans-serif;
-        }
-
-        .logo-text .tagline {
-            font-size: 0.7rem;
-            color: #c8e6c9;
-            margin-top: 2px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-weight: 400;
+        .logo-text p {
+            font-size: 0.9rem;
             opacity: 0.9;
         }
 
@@ -159,11 +87,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Add padding to body to account for fixed header */
-        body {
-            padding-top: 80px;
-        }
-
         /* Hero Section */
         .hero {
             background: linear-gradient(rgba(26, 58, 95, 0.8), rgba(44, 82, 130, 0.8)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
@@ -172,8 +95,6 @@
             color: white;
             padding: 100px 0;
             text-align: center;
-            margin-top: -80px;
-            padding-top: 180px;
         }
 
         .hero h2 {
@@ -490,10 +411,6 @@
                 gap: 20px;
             }
 
-            .logo {
-                justify-content: center;
-            }
-
             .hero h2 {
                 font-size: 2.2rem;
             }
@@ -509,29 +426,6 @@
             .form-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .hologram-cube {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .face {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .logo-text .company-name {
-                font-size: 1.2rem;
-            }
-
-            body {
-                padding-top: 120px;
-            }
-
-            .hero {
-                margin-top: -120px;
-                padding-top: 140px;
-            }
         }
     </style>
 </head>
@@ -541,20 +435,12 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <div class="logo-container">
-                        <div class="hologram-cube">
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face right"></div>
-                            <div class="face left"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                            <div class="energy-core"></div>
-                        </div>
-                        <div class="logo-text">
-                            <div class="company-name">NEXTGEN</div>
-                            <div class="tagline">Engineering & Infra Solutions</div>
-                        </div>
+                    <div class="logo-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1><span class="nextgen">NextGen</span> Engineering & Infra Solutions</h1>
+                        <p>Reliable, Professional. On-Time.</p>
                     </div>
                 </div>
                 <button class="cta-button">Request a Quote</button>
@@ -669,15 +555,75 @@
                             <input type="tel" id="phone" placeholder="Enter your phone number">
                         </div>
                         <div class="form-group full-width">
-                
-                <h3>Contact Info</h3>
+                            <label for="message">Message / Project Details</label>
+                            <textarea id="message" placeholder="Describe your project requirements"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3><span class="nextgen">NextGen</span> Engineering</h3>
+                    <p>Reliable, Professional. On-Time infrastructure solutions for all your needs.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Our Services</a>
+                    <a href="#quote">Request a Quote</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+917026117372 / 9986283353" class="contact-link">   +917026117372 / 9986283353</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+917026117372" class="contact-link">   +917026117372</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:Nextgenenggandinfrasolutions@outlook.com" class="contact-link">Nextgenenggandinfrasolutions@outlook.com</a></p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 <span class="nextgen">NextGen</span> Engineering & Infra Solutions. All Rights Reserved.</p>
+                <p>&copy; 2023 <span class="nextgen">NextGen</span> Engineering & Infra Solutions. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will get back to you soon.');
+            this.reset();
+        });
+
+        // CTA buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function() {
+                document.getElementById('quote').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
